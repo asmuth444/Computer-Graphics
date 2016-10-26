@@ -51,7 +51,7 @@ int main(int argc,char **argv)
 	glutInitDisplayMode(GLUT_RGB|GLUT_SINGLE);
 	glutInitWindowSize(500,500);
 	glutInitWindowPosition(100,100);
-	glutCreateWindow("bresenham");
+	glutCreateWindow("Mouse");
 	glutDisplayFunc(display);//Display Callback
 	glutTimerFunc(100,time,0);//Timer Callback
 	glutMouseFunc(mouse);//Mouse Callback param: button, state, cursor postion x,cursor position y

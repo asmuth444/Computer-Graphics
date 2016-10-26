@@ -13,7 +13,7 @@ void display()
 	glBegin(GL_POLYGON);
 	glVertex2f(100,100);
 	glVertex2f(-100,100);
-	glVertex2f(-100,-100);/*Timer function glutTimerFunc(time millisec,function to be called,parameter to function) should be recursively for looping glutPostRedisplay() calls the display function without name*/
+	glVertex2f(-100,-100);
 	glVertex2f(100,-100);
 	glEnd();
 	glFlush();
@@ -48,7 +48,7 @@ int main(int argc,char **argv)
 	glutInitDisplayMode(GLUT_RGB|GLUT_SINGLE);
 	glutInitWindowSize(500,500);
 	glutInitWindowPosition(100,100);
-	glutCreateWindow("bresenham");
+	glutCreateWindow("Keyboard");
 	glutDisplayFunc(display);//Display Callback
 	glutTimerFunc(100,time,0);//Timer Callback
 	glutKeyboardFunc(key);//Keyboard Callback param: key, cursor postion x,cursor position y
