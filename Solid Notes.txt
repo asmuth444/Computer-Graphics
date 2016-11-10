@@ -1,0 +1,16 @@
+Wireframe => glutWire()
+Solid => glutSolid()
+
+for othographic projections
+Teapot(size)
+Cube(size)
+Sphere(radius,no.of slices, no. of stacks)
+Torus(iradius, oradius, no.of sides, no. of rings) Donut shaped
+Cone(base, height, no. of slices, no. of stacks)
+
+wireframes are filled with solid blocks.
+
+Perspective projection:
+gluPerspective(fovy,Aspect Ratio, Znear, Zfar)
+gluLookAt((x,y,z)camera position,(x,y,z)centre of view,(x,y,z)up direction)
+Either orthographic will happen or perspective will happen
